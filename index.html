@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextFormatter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            TextFormatter
+        </div>
+        <div class="buttons">
+            <button id="bold" onclick="turnBold(this)">Bold</button>
+            <button id="italic" onclick="turnItalic(this)">Italic</button>
+            <button id="underline" onclick="turnUnderline(this)">Underline</button>
+            <button id="left" class="align" onclick="turnAlign(this, 'left')"><img src="align-left-solid.svg" alt=""></button>
+            <button id="center" class="align" onclick="turnAlign(this, 'center')" ><img src="align-center-solid.svg" alt=""></button>
+            <button id="right" class="align" onclick="turnAlign(this, 'right')" ><img src="align-right-solid.svg" alt=""></button>
+        </div>
+        <div class="hr"></div>
+    <div class="editors">
+        <div class="input">
+            <h3>Your Text</h3>
+            <textarea name="inputtext" id="inputtext" onkeyup="updateText()"></textarea>
+        </div>
+        <div class="output">
+            <h3>Formatted Text</h3>
+            <div id="outputtext"></div>
+        </div>
+        
+    </div>
+   
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
